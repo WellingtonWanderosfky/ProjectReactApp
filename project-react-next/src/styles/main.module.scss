@@ -2,4 +2,15 @@
     max-width: 1000px;
     margin: 0 auto;
     height: 100vh;
+    font-family: "Arial",sans-serif;
+}
+
+.conteiner section{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+    height: 100vh;
+
 }
