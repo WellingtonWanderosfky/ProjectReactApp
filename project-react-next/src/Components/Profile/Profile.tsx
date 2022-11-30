@@ -7,7 +7,7 @@ const Profile = () => {
         <div>
             <strong>Wellington Wanderosky</strong>
             <p>	
-              <img src="icons/up.svg" alt=""/>
+              <img src="icons/up.svg" alt="level"/>
               Level 1 </p>
         </div>
     </div>
