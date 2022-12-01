@@ -36,3 +36,59 @@
 .countdownContainer > div span:last-child {
     border-right: 1px solid #f0f1f3;
 }
+
+.coutdownButton{
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #5965E0;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.coutdownButton:not(:disabled):hover{
+    background-color: #4953B8;
+}
+.coutdownButtonActive{
+    background-color: #fff;
+    color: #666666;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.4s;
+    &::after{
+        margin-left: 10px;
+        content: "";
+        background: url(../../../public/icons/close-ciclo.svg) no-repeat center;
+        width: 14px;
+        height: 14px;
+    }
+    &:hover{
+        background-color: red;
+        color: #fff;
+        &::after{
+            margin-left: 10px;
+            content: "";
+            background: url(../../../public/icons/close-ciclo-hover.svg) no-repeat center;
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+}
+
+.coutdownButton:disabled{
+    cursor :not-allowed;
+    background-color: #fff;
+    color: #666666;
+    border: solid 1px #d7d8da;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+
+}
