@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import ChallegenBox from '../Components/ChallengeBox.tsx/ChallegeBox';
 import CompletedChallenges from '../Components/CompletedChallenges/CompletedChallenges';
 import Coutdown from '../Components/Countdown/Coutdown';
 import Profile from "../Components/Profile/Profile";
@@ -21,6 +22,7 @@ export default function Home() {
             </div>
 
             <div>
+            <ChallegenBox/>
 
             </div>
 
